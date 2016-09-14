@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>条纹背景</title>
+    <style media="screen">
+        .container {
+            height: 100px;
+            margin-bottom:10px;
+        }
+
+        .horizonal {
+            /*色标设置为0则默认前一个色标的位置*/
+            background-image: -webkit-linear-gradient(top, #fb3 33.3%, #58a 0, #58a 66.6%, #ddd 0);
+            background-image: -moz-linear-gradient(bottom, #fb3 33.3%, #58a 0, #58a 66.6%, #ddd 0);
+            background-image: -o-linear-gradient(bottom, #fb3 33.3%, #58a 0, #58a 66.6%, #ddd 0);
+            background-image: linear-gradient(to bottom, #fb3 33.3%, #58a 0, #58a 66.6%, #ddd 0);
+            background-size: 100% 30px;
+        }
+
+        .vertical {
+            background-image: -webkit-linear-gradient(left, #fb3 33.3%, #58a 0, #58a 66.6%, #ddd 0);
+            background-image: -moz-linear-gradient(right, #fb3 33.3%, #58a 0, #58a 66.6%, #ddd 0);
+            background-image: -o-linear-gradient(right, #fb3 33.3%, #58a 0, #58a 66.6%, #ddd 0);
+            background-image: linear-gradient(to right, #fb3 33.3%, #58a 0, #58a 66.6%, #ddd 0);
+            background-size: 30px 100%;
+        }
+
+        .diagonal {
+            background-image: -webkit-linear-gradient(left bottom, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+            background-image: -moz-linear-gradient(right top, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+            background-image: -o-linear-gradient(right top, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+            background-image: linear-gradient(to right top, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+            background-size: 42px 42px;
+        }
+        .diagonal-repeating{
+            background-image: -webkit-linear-gradient(left bottom, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+            background-image: -moz-linear-gradient(right top, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+            background-image: -o-linear-gradient(right top, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+            background-image: linear-gradient(to right top, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+            background-size: 42px 42px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container horizonal"></div>
+    <div class="container vertical"></div>
+    <div class="container diagonal"></div>
+    <div class="container diagonal-repeating"></div>
+</body>
+
+</html>

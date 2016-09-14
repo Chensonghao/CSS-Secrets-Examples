@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>边框内圆角</title>
+    <style media="screen">
+        /*------常规实现方式------*/
+        .container1 {
+            width: 200px;
+            height: 100px;
+            background-color: tan;
+            margin: 50px auto 0;
+            padding: .8em;
+        }
+
+        .item {
+            border-radius: 1em;
+            background-color: green;
+            height: 100%;
+        }
+        /*------进阶实现方式------*/
+        .container2{
+            width: 200px;
+            height: 100px;
+            background-color: green;
+            margin: 50px auto 0;
+            border-radius: 1em;
+            box-shadow: 0 0 0 .5em tan;
+            outline: .8em solid tan
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="item"></div>
+    </div>
+    <div class="container2"></div>
+</body>
+
+</html>
